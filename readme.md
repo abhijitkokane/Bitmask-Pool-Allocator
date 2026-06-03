@@ -1,4 +1,4 @@
-# Bitmask Memory Allocator Benchmark
+# Bitmask Pool Allocator Benchmark
 
 A high-performance, single-cycle $O(1)$ lock-free memory pool allocator written in C11. 
 This project features a custom memory allocator tracked via an atomic 64-bit mask,
