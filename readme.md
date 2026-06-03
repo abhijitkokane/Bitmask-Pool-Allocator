@@ -9,3 +9,14 @@ benchmarked against standard `malloc`/`free` using a lightning-fast lockless Xor
 ```bash
 make
 ./bitmask_memory_allocator
+
+## Benchmark Output
+This is benchmark of bitmask pool allocator against malloc 
+
+Here is the execution profile running 10,000,000 allocation cycles on a Fedora Linux environment:
+
+Same random generator seed: 0xDEADBEEF for both bitmask allocator and malloc 
+Custom Bitmask Pool:  0.016718 seconds
+Standard malloc/free: 0.097412 seconds
+
+Custom pool is 5.83x FASTER than malloc() under true fragmentation.
