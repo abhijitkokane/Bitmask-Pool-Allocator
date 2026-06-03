@@ -8,6 +8,7 @@ benchmarked against standard `malloc`/`free` using a lightning-fast lockless Xor
 ## How to Run
 ```bash
 make
+<<<<<<< HEAD
 ./bitmask_memory_allocator
 
 ## Benchmark Output
@@ -20,3 +21,6 @@ Custom Bitmask Pool:  0.016718 seconds
 Standard malloc/free: 0.097412 seconds
 
 Custom pool is 5.83x FASTER than malloc() under true fragmentation.
+=======
+./bitmask_pool_allocator
+>>>>>>> efabf39 (Added license)
